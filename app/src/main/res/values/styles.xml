@@ -1,0 +1,7 @@
+<resources>
+    <style name="NoRippleBottomNav" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemRippleColor">@null</item>
+        <item name="itemBackground">@drawable/nav_item_background</item>
+        <item name="android:background">@drawable/bottom_nav_background</item>
+    </style>
+</resources>
