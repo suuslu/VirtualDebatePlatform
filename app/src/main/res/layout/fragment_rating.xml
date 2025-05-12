@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F9FC"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate the Speaker's Argument 📝"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#222"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Rating Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Logic -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logic 🧠"
+                    android:textStyle="bold"
+                    android:textColor="#222"
+                    android:layout_marginEnd="16dp" />
+
+                <RatingBar
+                    android:id="@+id/rating_logic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:isIndicator="false"
+                    android:minHeight="40dp"
+                    android:numStars="5"
+                    android:scaleX="0.85"
+                    android:scaleY="0.85"
+                    android:stepSize="1" />
+            </LinearLayout>
+
+            <!-- Clarity -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Clarity 🔍"
+                    android:textColor="#222"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/rating_clarity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:isIndicator="false"
+                    android:minHeight="40dp"
+                    android:numStars="5"
+                    android:scaleX="0.85"
+                    android:scaleY="0.85"
+                    android:stepSize="1" />
+            </LinearLayout>
+
+            <!-- Persuasiveness -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="32dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Impact 💬"
+                    android:textStyle="bold"
+                    android:textColor="#222"
+                    android:layout_marginEnd="16dp" />
+
+                <RatingBar
+                    android:id="@+id/rating_persuasiveness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:isIndicator="false"
+                    android:minHeight="40dp"
+                    android:numStars="5"
+                    android:scaleX="0.85"
+                    android:scaleY="0.85"
+                    android:stepSize="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btn_submit_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Feedback"
+            android:textColor="#222"
+            android:textStyle="bold"
+            android:backgroundTint="#E2FFE9"
+            android:padding="16dp"/>
+    </LinearLayout>
+</ScrollView>

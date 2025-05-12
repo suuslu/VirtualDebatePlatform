@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F5F9FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Debate Feedback 🧾"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#222"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Feedback Item 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFE9EF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="🧠 Logic: Strong, well-supported points. Try to reduce repetition."
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Feedback Item 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFE9EF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="🔍 Clarity: Clear delivery and transitions. Great pacing!"
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Feedback Item 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFE9EF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="💬 Impact: Convincing points, but vary tone for emphasis."
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/btn_back_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return to Home"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:backgroundTint="#CFF5D3"
+            android:padding="14dp" />
+    </LinearLayout>
+</ScrollView>

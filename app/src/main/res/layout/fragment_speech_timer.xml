@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FFF7"
+    android:padding="24dp">
+
+    <!-- Speaker Info -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FCE7EF">
+
+        <TextView
+            android:id="@+id/tv_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎤 Speaker: @user1"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:textColor="#222"
+            android:textSize="16sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Timer Circle -->
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/circle_timer"
+        android:text="01:30"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <!-- Microphone Status -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_microphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_timer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FCE7EF">
+
+        <TextView
+            android:id="@+id/tv_microphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎙️ Microphone: ON"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:textColor="#222"
+            android:textSize="16sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Time Warning -->
+    <TextView
+        android:id="@+id/tv_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_microphone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="⚠️ 30 seconds remaining!"
+        android:textStyle="bold"
+        android:textColor="#222"
+        android:textSize="14sp" />
+</RelativeLayout>

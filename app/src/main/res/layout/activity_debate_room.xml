@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7FA"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:clipToPadding="false">
+
+        <!-- Debate Name -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FCE7EF">
+
+            <TextView
+                android:id="@+id/debate_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textColor="#222"
+                android:textSize="16sp"
+                android:text="🎤 Debate Name: 'Is AI Beneficial for Society?'" />  <!-- Default Text -->
+        </androidx.cardview.widget.CardView>
+
+        <!-- Participants -->
+        <TextView
+            android:id="@+id/participant_1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="👤 Participant 1: a" /> <!-- Default Participant 1 -->
+
+        <TextView
+            android:id="@+id/participant_2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="👤 Participant 2: b" /> <!-- Default Participant 2 -->
+
+        <!-- Countdown Timer -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFDDE7">
+
+            <TextView
+                android:id="@+id/timer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textColor="#AA3333"
+                android:textSize="16sp"
+                android:text="⏳ 01:00 remaining" /> <!-- Default Timer Text -->
+        </androidx.cardview.widget.CardView>
+
+        <!-- End Debate Button -->
+        <Button
+            android:id="@+id/btn_start_speech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#CFF5D3"
+            android:padding="12dp"
+            android:text="End Debate"
+            android:textColor="#000000" />
+
+        <!-- Real-Time Status -->
+        <TextView
+            android:id="@+id/realtime_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🕊️ Real-time Status:\n- Now Speaking: @user2\n- You’re next!"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:gravity="center" />
+    </LinearLayout>
+</ScrollView>
