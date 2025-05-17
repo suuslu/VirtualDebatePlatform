@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 
 class HomeFragment : Fragment() {
@@ -27,6 +28,10 @@ class HomeFragment : Fragment() {
     ): View? {
         // Bu fragment'ın layout dosyasını inflate ediyoruz
         val rootView = inflater.inflate(R.layout.fragment_home, container, false)
+
+
+        val username = arguments?.getString("username") ?: "User"
+        rootView.findViewById<TextView>(R.id.tv_welcome)?.text = "Welcome back, $username 👋"
 
         val createButton = rootView.findViewById<Button>(R.id.btn_create)
 

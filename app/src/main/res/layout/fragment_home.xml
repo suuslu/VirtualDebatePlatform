@@ -20,7 +20,7 @@
             android:id="@+id/tv_welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome back, User! 👋"
+            android:text="Welcome back! 👋 :)"
             android:textSize="22sp"
             android:textStyle="bold"
             android:layout_marginTop="8dp"
@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Upcoming Debates 🌸"
+            android:text="Have a good day! 🌸"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp" />
@@ -45,59 +45,6 @@
             android:paddingTop="4dp"
             android:paddingBottom="4dp">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp"
-                app:cardBackgroundColor="#FCE7EF">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Debate Topic 1 🗣️"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:textColor="#222"
-                    android:textSize="16sp" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp"
-                app:cardBackgroundColor="#FCE7EF">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Debate Topic 2 🧠"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:textColor="#222"
-                    android:textSize="16sp" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp"
-                app:cardBackgroundColor="#FCE7EF">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Debate Topic 3 🎯"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:textColor="#222"
-                    android:textSize="16sp" />
-            </androidx.cardview.widget.CardView>
         </LinearLayout>
 
         <!-- Action Buttons -->
@@ -124,9 +71,20 @@
             android:id="@+id/tv_notifications"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="⚠️ You have 2 new feedback messages!"
+            android:text="⚠️ AI Feedback for Debate 'Critical Thinking':
+🧠 Logic: Sound reasoning is presented, highlighting the necessity of critical thinking in public debates.
+
+🔍 Clarity: The statement is clear and easy to understand, leaving no room for ambiguity.
+
+💬 Impact: Recognizing the significance of critical thinking in public debates can lead to more informed discussions and better decision-making.
+
+🏅 Score: 9/10
+
+(🎙️ Microphone did not record. If it had worked, this is the kind of feedback you would see.)"
             android:textColor="#333333"
             android:gravity="center"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:lineSpacingExtra="4dp" />
     </LinearLayout>
 </ScrollView>
